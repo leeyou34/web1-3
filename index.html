@@ -15,7 +15,7 @@
         color: black;
         text-decoration: none;
       }
-      @media(min-width:500px){
+      @media(max-width:500px){
         #grid ol {
           border-bottom:1px solid gray;
           border-right:1px solid gray;
@@ -31,6 +31,20 @@
         #article {
           padding-left:25px;
           border-bottom:1px solid gray;
+        }
+      @media(max-width:800px){
+        #grid ol {
+          border-bottom:none;
+          border-right:none;
+        }
+        #grid {
+          display:block;
+        }
+        #article {
+          border-bottom:block;
+        }
+        h1 {
+          border-bottom:block; 
         }
       }
     </style>
